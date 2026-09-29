@@ -1,0 +1,14 @@
+# One PR per dependency (no groups), daily, so every DependaBuddy policy path gets
+# exercised: production patch (lodash), development minor (prettier), production
+# minor (yaml), major (typescript), and a GitHub Actions major (actions/checkout).
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: daily
+    open-pull-requests-limit: 10
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
