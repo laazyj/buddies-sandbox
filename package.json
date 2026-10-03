@@ -11,6 +11,8 @@
     "yaml": "2.0.0"
   },
   "devDependencies": {
+    "ms": "2.1.2",
+    "picocolors": "1.0.0",
     "prettier": "3.9.9",
     "typescript": "5.4.5"
   }
