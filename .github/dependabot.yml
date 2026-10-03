@@ -1,6 +1,8 @@
 # One PR per dependency (no groups), daily, so every DependaBuddy policy path gets
-# exercised: production patch (lodash), development minor (prettier), production
-# minor (yaml), major (typescript), and a GitHub Actions major (actions/checkout).
+# exercised: production patch (lodash), development minor (prettier, picocolors),
+# development patch (ms), production minor (yaml), major (typescript), and a GitHub
+# Actions major (actions/checkout). ms and picocolors both change the lockfile, so
+# merging one makes the other conflict: the case buddies#31 handles.
 version: 2
 updates:
   - package-ecosystem: npm
